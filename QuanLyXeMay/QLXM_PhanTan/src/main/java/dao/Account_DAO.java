@@ -14,7 +14,7 @@ import util.HibernateUtil;
 
 public interface Account_DAO extends Remote {
 
-	 public List<Account> getAllDsAccount() throws RemoteException;
+	 public ArrayList<Account> getAllDsAccount() throws RemoteException;
 	 public Account getTheoUsername(String Username) throws RemoteException;
 	 
     

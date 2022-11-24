@@ -231,10 +231,10 @@ public class FrmQLKhachHang extends JFrame implements ActionListener, MouseListe
 		}
 	}
 
-//	public static void main(String[] args) {
-//		new FrmQLKhachHang().setVisible(true);
-//
-//	}
+	public static void main(String[] args) {
+		new FrmQLKhachHang().setVisible(true);
+
+	}
 
 	
 	public void actionPerformed(ActionEvent e) {

@@ -37,7 +37,6 @@ public class KhachHang_impl extends UnicastRemoteObject implements KhachHang_DAO
 		try {
 			tr.begin();
 			dskh =  em.createNativeQuery(sql,KhachHang.class).getResultList();
-			System.out.println("list kh"+dskh);
 			tr.commit();
 		} catch (Exception e) {
 			e.printStackTrace();

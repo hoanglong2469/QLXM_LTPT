@@ -39,7 +39,7 @@ public class NhanVien_impl extends UnicastRemoteObject implements NhanVien_DAO{
 		try {
 			tr.begin();
 			dsnv = em.createNativeQuery(sql,NhanVien.class).getResultList();
-			System.out.println("list nv"+dsnv);
+			System.out.println("list dao"+dsnv);
 			tr.commit();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -48,6 +48,23 @@ public class NhanVien_impl extends UnicastRemoteObject implements NhanVien_DAO{
 		return dsnv;
 	}
 
+//	public List<SanPham> getAllDsSanpham() throws RemoteException {
+//		List<SanPham> dsSanpham = new ArrayList<SanPham>();
+//		EntityTransaction tr = em.getTransaction();
+//		String sql = "select * from Xe";
+//		try {
+//			tr.begin();
+//			dsSanpham =em.createNativeQuery(sql,SanPham.class).getResultList();
+//			System.out.println("list dao"+dsSanpham);
+//			tr.commit();
+//
+//		} catch (RuntimeException e) {
+//			e.printStackTrace();
+//			tr.rollback();
+//		}
+//		return dsSanpham;
+
+//	}
 	public NhanVien getTheoMaNV(String MaNV) throws RemoteException {
 		EntityTransaction tr = em.getTransaction();
 		NhanVien nv = new NhanVien();

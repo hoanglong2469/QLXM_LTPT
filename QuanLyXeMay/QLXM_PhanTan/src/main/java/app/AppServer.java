@@ -34,12 +34,12 @@ public class AppServer {
 			SanPham_DAO spDao = new SanPham_impl();
 			HoaDon_DAO hdDao = new HoaDon_impl();
 
-            LocateRegistry.createRegistry(9090);
-            context.bind("rmi://localhost:9090/nvDao", nvDao);
-            context.bind("rmi://localhost:9090/khDao", khDao);
-            context.bind("rmi://localhost:9090/tkDao", tkDao);
-            context.bind("rmi://localhost:9090/spDao", spDao);
-            context.bind("rmi://localhost:9090/hdDao", hdDao);
+            LocateRegistry.createRegistry(2342);
+            context.bind("rmi://localhost:2342/nvDao", nvDao);
+            context.bind("rmi://localhost:2342/khDao", khDao);
+            context.bind("rmi://localhost:2342/tkDao", tkDao);
+            context.bind("rmi://localhost:2342/spDao", spDao);
+            context.bind("rmi://localhost:2342/hdDao", hdDao);
             
             System.out.println("Server RMI ready....");
 

@@ -163,9 +163,9 @@ public class FrmHoaDon extends JFrame implements ActionListener, MouseListener {
 		lbmaXe.setBounds(20, 60, 100, 20);
 		txtmaXe.setBounds(110, 60, 450, 22);
 		lbmaNV.setBounds(650, 60, 100, 20);
-		txtmaNV.setBounds(110, 90, 450, 22);
+		txtmaNV.setBounds(750, 60, 450, 22);
 		lbngayHD.setBounds(20, 90, 110, 20);
-		txtngaylapHD.setBounds(750, 60, 450, 22);
+		txtngaylapHD.setBounds(110, 90, 450, 22);
 		lbDongia.setBounds(650, 90, 100, 20);
 		txtDongia.setBounds(750, 90, 450, 22);
 		lbSoluong.setBounds(20, 120, 100, 20);
@@ -320,7 +320,7 @@ public class FrmHoaDon extends JFrame implements ActionListener, MouseListener {
 						} else
 							try {
 								hd_dao.create(hd);
-								model.addRow(new Object[] { hd.getMaHD(), hd.getKhachhang().getMaKH(),
+								model.addRow(new Object[] { hd.getMaHD(), hd.getKhachhang().getMaKH(),hd.getSanpham().getMaXe(),
 									 hd.getNhanvien().getMaNV(), hd.getNgaylapHD(),hd.getDonGia(),hd.getSoluong(),hd.getThanhTien()
 										 });
 							} catch (Exception e1) {
@@ -474,12 +474,7 @@ public class FrmHoaDon extends JFrame implements ActionListener, MouseListener {
 
 			} else {
 
-//				try {
-//					Docdulieukhachhang(idkh);
-//				} catch (RemoteException e1) {
-//					// TODO Auto-generated catch block
-//					e1.printStackTrace();
-//				}
+				
 
 			}
 			
@@ -619,7 +614,7 @@ public class FrmHoaDon extends JFrame implements ActionListener, MouseListener {
 		List<HoaDon> list = hd_dao.getAllDsHoadon();
 
 		for (HoaDon hd : list) {
-			model.addRow(new Object[] { hd.getMaHD(), hd.getKhachhang().getMaKH(),
+			model.addRow(new Object[] { hd.getMaHD(), hd.getKhachhang().getMaKH(),hd.getSanpham().getMaXe(),
 					hd.getNhanvien().getMaNV(), hd.getNgaylapHD(),hd.getDonGia(), hd.getSoluong() ,hd.getThanhTien()});
 		}
 	}
@@ -665,5 +660,6 @@ public class FrmHoaDon extends JFrame implements ActionListener, MouseListener {
 		}
 		return false;
 	}
+	
 	
 }

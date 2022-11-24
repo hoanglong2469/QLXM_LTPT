@@ -251,10 +251,10 @@ public class FrmQLSanPham_NV extends JFrame implements ActionListener, MouseList
 
 	}
 
-//	public static void main(String[] args) {
-//		new FrmQLSanPham_NV().setVisible(true);
-//
-//	}
+	public static void main(String[] args) {
+		new FrmQLSanPham_NV().setVisible(true);
+
+	}
 
 	
 	public void actionPerformed(ActionEvent e) {

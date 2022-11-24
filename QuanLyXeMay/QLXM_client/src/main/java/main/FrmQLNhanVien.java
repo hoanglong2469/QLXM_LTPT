@@ -234,10 +234,10 @@ public class FrmQLNhanVien extends JFrame implements ActionListener, MouseListen
 		}
 	}
 
-//	public static void main(String[] args) {
-//		new FrmQLNhanVien().setVisible(true);
-//
-//	}
+	public static void main(String[] args) {
+		new FrmQLNhanVien().setVisible(true);
+
+	}
 
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub

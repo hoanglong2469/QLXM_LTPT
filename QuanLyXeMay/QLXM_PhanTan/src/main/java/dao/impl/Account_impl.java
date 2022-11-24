@@ -26,14 +26,13 @@ public class Account_impl extends UnicastRemoteObject implements Account_DAO{
     	em = HibernateUtil.getInstance().getEntityManagerFactory().createEntityManager();
 	}
 	@Override
-	public List<Account> getAllDsAccount() throws RemoteException {
+	public ArrayList<Account> getAllDsAccount() throws RemoteException {
 		EntityTransaction tr = em.getTransaction();
-		List<Account> acc = new ArrayList<Account>();
+		ArrayList<Account> acc = new ArrayList<Account>();
 		String sql = "select * from Account";
 		try {
 			tr.begin();
-			acc = em.createNativeQuery(sql,Account.class).getResultList();
-			System.out.println("list acc"+acc);
+			acc = (ArrayList<Account>) em.createNamedQuery(sql).getResultList();
 			tr.commit();
 		} catch (Exception e) {
 			e.printStackTrace();
