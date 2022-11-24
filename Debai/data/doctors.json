@@ -1,0 +1,6 @@
+{"_id":"DT100","specialty":"Dermatologist","doctor_name":"Steven King","phones":["(155) 555-2234"],"certifications":["CPCT","CNA","CCS-P"]}
+{"_id":"DT101","specialty":"Gastroenterologist","doctor_name":"Neena Kochhar","phones":["(355) 444-1234"],"certifications":["RBT","CPT","CNA","CPC"]}
+{"_id":"DT102","specialty":"Ophthalmologist","doctor_name":"Elliot Reid","phones":["(355) 444-98765"],"certifications":["RBT","CPhT","CPC"]}
+{"_id":"DT103","specialty":"Surgical Attending Physician","doctor_name":"Keith De Haan","phones":["(369) 654-9299"],"certifications":["CPhT","CCMA"]}
+{"_id":"DT104","specialty":"Infectious disease","doctor_name":"Lex Dudemeister","phones":["(429) 690-9229"],"certifications":["CCS-P","CCMA"]}
+{"_id":"DT106","specialty":"Cardiologists","doctor_name":"Louise Doran","phones":["(650) 505-3876","(650) 507-9833"],"certifications":["CPhT","CCS-P","CCMA"]}
